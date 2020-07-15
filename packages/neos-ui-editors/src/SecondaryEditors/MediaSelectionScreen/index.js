@@ -26,17 +26,19 @@ class MediaSelectionScreen extends PureComponent {
 
         const mediaBrowserUri = $get('routes.core.modules.mediaBrowser', neos);
         return (
-            <iframe name="neos-media-selection-screen" src={`${mediaBrowserUri}/assets/index.html?${this.encodeAsQueryString({constraints: constraints})}`} className={style.iframe}/>
+            <iframe name="neos-media-selection-screen" src={`${mediaBrowserUri}/assets/index.html?${this.encodeAsQueryString({constraints})}`} className={style.iframe}/>
         );
     }
 
     encodeAsQueryString = (obj, prefix) => {
-        let str = [], p;
+        const str = [];
+        let p;
         for (p in obj) {
-            if (!obj.hasOwnProperty(p)) {
+            if (!Object.prototype.hasOwnProperty.call(obj, p)) {
                 continue;
             }
-            const k = prefix ? prefix + '[' + p + ']' : p, v = obj[p];
+            const k = prefix ? prefix + '[' + p + ']' : p;
+            const v = obj[p];
             if (v === null) {
                 continue;
             }

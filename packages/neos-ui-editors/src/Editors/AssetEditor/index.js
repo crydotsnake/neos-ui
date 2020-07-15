@@ -200,7 +200,7 @@ export default class AssetEditor extends PureComponent {
 
     renderAssetSelectorAndUpload() {
         const mediaTypeConstraint = $get('options.constraints.mediaTypes', this.props);
-        const accept = $get('options.accept', this.props) || mediaTypeConstraint && mediaTypeConstraint.join(',');
+        const accept = $get('options.accept', this.props) || (mediaTypeConstraint && mediaTypeConstraint.join(','));
         const multiple = $get('options.multiple', this.props);
         const {className, imagesOnly, value} = this.props;
 

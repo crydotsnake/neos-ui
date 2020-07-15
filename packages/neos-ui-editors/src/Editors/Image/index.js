@@ -210,12 +210,11 @@ export default class ImageEditor extends Component {
     }
 
     handleChooseFromMedia = () => {
-        console.log('options (r)', this.props.options)
         const {secondaryEditorsRegistry, options} = this.props;
         const {component: MediaSelectionScreen} = secondaryEditorsRegistry.get('Neos.Neos/Inspector/Secondary/Editors/MediaSelectionScreen');
 
         // set media type constraint to "image/*" if it is not explicitly specified via options.constraints.mediaTypes
-        const constraints = {...options.constraints, mediaTypes: (options.constraints && options.constraints.mediaTypes) || ['image/*'] }
+        const constraints = {...options.constraints, mediaTypes: (options.constraints && options.constraints.mediaTypes) || ['image/*']};
 
         this.props.renderSecondaryInspector('IMAGE_SELECT_MEDIA', () => <MediaSelectionScreen constraints={constraints || {}} onComplete={this.handleMediaSelected}/>);
     }
@@ -242,7 +241,7 @@ export default class ImageEditor extends Component {
         const {className} = this.props;
         const disabled = $get('options.disabled', this.props);
         const mediaTypeConstraint = $get('options.constraints.mediaTypes', this.props);
-        const accept = $get('options.accept', this.props) || mediaTypeConstraint && mediaTypeConstraint.join(',');
+        const accept = $get('options.accept', this.props) || (mediaTypeConstraint && mediaTypeConstraint.join(','));
 
         const classNames = mergeClassNames({
             [style.imageEditor]: true
