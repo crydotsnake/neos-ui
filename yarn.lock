@@ -590,6 +590,42 @@
   dependencies:
     lodash.upperfirst "^4.3.0"
 
+"@neos-project/build-essentials@5.2.3":
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/@neos-project/build-essentials/-/build-essentials-5.2.3.tgz#9c92adf18d2c231a63108fc14229fe976c06a58f"
+  integrity sha512-WUYAPl1lfFkZbTyRPF2vrXdXzlTtmvUfhAOA1Zfn++88HmEOiTmgQ+51WbsmAeWpia/TnQXb2zRkVZ5Tjq0x0A==
+  dependencies:
+    "@ckeditor/ckeditor5-dev-utils" "^12.0.1"
+    babel-core "^6.26.3"
+    babel-eslint "^7.1.1"
+    babel-loader "^7.1.2"
+    check-dependencies "^1.0.1"
+    cpx "^1.3.1"
+    cross-env "^6.0.3"
+    css-loader "^3.4.1"
+    eslint "^5.3.0"
+    lodash.upperfirst "^4.3.0"
+    mini-css-extract-plugin "^0.5.0"
+    postcss-css-variables "^0.14.0"
+    postcss-hexrgba "^1.0.1"
+    postcss-import "^12.0.1"
+    postcss-loader "^3.0.0"
+    postcss-nested "^4.2.1"
+    rimraf "^2.5.4"
+    stylelint "^13.0.0"
+    terser-webpack-plugin "^2.3.1"
+    ts-jest "^23.10.5"
+    ts-loader "^6.0.0"
+    tslib "^1.9.3"
+    tslint "^5.11.0"
+    tslint-config-prettier "^1.15.0"
+    tslint-react "^3.6.0"
+    typescript "^3.2.2"
+    url-loader "^3.0.0"
+    watch "^1.0.2"
+    webpack "^4.41.5"
+    webpack-livereload-plugin "^2.2.0"
+
 "@neos-project/eslint-config-neos@^2.3.0":
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@neos-project/eslint-config-neos/-/eslint-config-neos-2.3.0.tgz#07e885ca766fddce6933831b169d5626d906232a"
@@ -601,6 +637,11 @@
     eslint-plugin-import "^2.13.0"
     eslint-plugin-jsx-a11y "^6.1.1"
     eslint-plugin-react "^7.10.0"
+
+"@neos-project/positional-array-sorter@5.2.3":
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/@neos-project/positional-array-sorter/-/positional-array-sorter-5.2.3.tgz#c5272097f071317849c6f9fae988fb51a4f548f2"
+  integrity sha512-DeQ3qY1FmRQx2C77fJvJPqrrYSRGIQ73coYn/lVShtskRBQlkjMvRfICnQHhEE+XLIh1cWyKL0NAUr3Rx4++pA==
 
 "@nodelib/fs.scandir@2.1.3":
   version "2.1.3"
@@ -5367,6 +5408,13 @@ cyclist@^1.0.1:
   resolved "https://registry.yarnpkg.com/d3-array/-/d3-array-2.3.3.tgz#e90c39fbaedccedf59fc30473092f99a0e14efa2"
   integrity sha512-syv3wp0U5aB6toP2zb2OdBkhTy1MWDsCAaYk6OXJZv+G4u7bSWEmYgxLoFyc88RQUhZYGCebW9a9UD1gFi5+MQ==
 
+"d3-array@2 - 3":
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/d3-array/-/d3-array-3.1.6.tgz#0342c835925826f49b4d16eb7027aec334ffc97d"
+  integrity sha512-DCbBBNuKOeiR9h04ySRBMW52TFVc91O9wJziuyXw6Ztmy8D3oZbmCkOO3UHKC7ceNJsN2Mavo9+vwV8EAEUXzA==
+  dependencies:
+    internmap "1 - 2"
+
 d3-array@^1.2.0:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/d3-array/-/d3-array-1.2.4.tgz#635ce4d5eea759f6f605863dbcfc30edc737f71f"
@@ -5436,10 +5484,17 @@ d3-time-format@2:
   dependencies:
     d3-time "1"
 
-d3-time@1, d3-time@^1.0.8:
+d3-time@1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/d3-time/-/d3-time-1.1.0.tgz#b1e19d307dae9c900b7e5b25ffc5dcc249a8a0f1"
   integrity sha512-Xh0isrZ5rPYYdqhAVk8VLnMEidhz5aP7htAADH6MfzgmmicPkTo8LhkLxci61/lCB7n7UmE3bN0leRt+qvkLxA==
+
+d3-time@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/d3-time/-/d3-time-3.0.0.tgz#65972cb98ae2d4954ef5c932e8704061335d4975"
+  integrity sha512-zmV3lRnlaLI08y9IMRXSDshQb5Nj77smnfpnd2LrBa/2K281Jijactokeak14QacHs/kKq0AQ121nidNYlarbQ==
+  dependencies:
+    d3-array "2 - 3"
 
 d@1, d@^1.0.1:
   version "1.0.1"
@@ -8372,6 +8427,11 @@ insert-css@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/insert-css/-/insert-css-2.0.0.tgz#eb5d1097b7542f4c79ea3060d3aee07d053880f4"
   integrity sha1-610Ql7dUL0x56jBg067gfQU4gPQ=
+
+"internmap@1 - 2":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/internmap/-/internmap-2.0.3.tgz#6685f23755e43c524e251d29cbc97248e3061009"
+  integrity sha512-5Hh7Y1wQbvY5ooGgPbDaL5iYLAPzMTUrjMulskHLH6wnv/A+1q5rgEaiuqEjB+oxGXIVZs1FF+R/KPN3ZSQYYg==
 
 interpret@1.2.0, interpret@^1.0.0:
   version "1.2.0"
