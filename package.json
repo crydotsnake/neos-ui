@@ -123,7 +123,7 @@
     "core-js": "^2.6",
     "custom-event-polyfill": "^1.0.6",
     "d3-scale": "^3.0.0",
-    "d3-time": "^1.0.8",
+    "d3-time": "^3.1.0",
     "debug": "^4.1.1",
     "file-loader": "^5.0.2",
     "hash-sum": "^2.0.0",
